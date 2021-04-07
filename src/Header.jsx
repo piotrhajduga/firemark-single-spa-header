@@ -1,10 +1,18 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { BrowserRouter as Router, useHistory } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
 export default function Header(props) {
+  return (
+    <Router>
+      <HeaderContainer />
+    </Router>
+  );
+}
+
+function HeaderContainer(props) {
   const history = useHistory();
 
   return (

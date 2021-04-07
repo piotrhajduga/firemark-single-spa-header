@@ -1,10 +1,10 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Root from "./root.component";
+import Header from "./Header";
 
-describe("Root component", () => {
+describe("Header component", () => {
   it("should be in the document", () => {
-    const { getByText } = render(<Root />);
+    const { getByText } = render(<Header />);
     expect(getByText(/Firemark/i)).toBeInTheDocument();
   });
 });
